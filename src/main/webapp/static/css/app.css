@@ -5,7 +5,9 @@
 }
 
 body {
-	background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+	
+	
+	background-color: #bbded6;
 }
 
 .panel>.panel-heading {
@@ -13,7 +15,7 @@ body {
 	background-image:none;
 	/*background-image: linear-gradient(-20deg, #2b5876 0%, #4e3476 100%);*/
 	/*background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%); - error panel*/
-    background-color:#6b61ff;
+    background-color:#2594a9;
     color: white;
 }
 .panel{
