@@ -1,17 +1,22 @@
 package com.mag.resume.controller;
 
-import java.io.IOException;
 
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/profile")
-public class ProfileController extends HttpServlet {
-	@Override
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		req.getRequestDispatcher("WEB-INF/JSP/profile.jsp").forward(req, resp);
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+@Controller
+public class ProfileController {
+	@RequestMapping(value = "/profile", method = RequestMethod.GET)
+	public String profile() {
+		
+		return "profile";
 	}
+	
+	@RequestMapping(value = "/error", method = RequestMethod.GET)
+	public String getErrorPage() {
+		return"error";
+	}
+	
 }
