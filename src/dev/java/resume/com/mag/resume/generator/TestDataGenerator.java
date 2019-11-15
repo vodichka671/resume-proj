@@ -29,7 +29,7 @@ import java.util.Random;
 import java.util.Set;
 import java.util.UUID;
 
-import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang.StringUtils;
 import org.joda.time.DateTime;
 
 import com.mag.resume.model.LanguageLevel;
@@ -191,7 +191,7 @@ public class TestDataGenerator {
 			if (!entry.getValue().isEmpty()) {
 				ps.setLong(1, idProfile);
 				ps.setString(2, entry.getKey());
-				ps.setString(3, StringUtils.join(entry.getValue().toArray(), ","));
+				ps.setString(3, org.apache.commons.lang.StringUtils.join(entry.getValue().toArray(), ","));
 				ps.addBatch();
 			}
 		}
