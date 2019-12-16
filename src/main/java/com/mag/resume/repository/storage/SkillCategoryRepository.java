@@ -10,4 +10,5 @@ import com.mag.resume.entity.SkillCategory;
 @RepositoryDefinition(domainClass = SkillCategory.class, idClass = Long.class)
 public interface SkillCategoryRepository {
 	List<SkillCategory> findAll(Sort sort);
+	
 }

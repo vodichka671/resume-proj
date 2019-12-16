@@ -2,6 +2,7 @@ package com.mag.resume.entity;
 
 import java.io.Serializable;
 import java.sql.Date;
+import java.util.Calendar;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -46,6 +47,7 @@ public class Practic extends AbstractFinishDateEntity<Long> implements Serializa
 
 	@Column(name = "begin_date", nullable = false)
 	private Date beginDate;
+	
 
 	@Transient
 	private Integer beginDateMonth;
@@ -116,8 +118,11 @@ public class Practic extends AbstractFinishDateEntity<Long> implements Serializa
 	public void setProfile(Profile profile) {
 		this.profile = profile;
 	}
+	//Calendar claCalendar;
 
 	public Date getBeginDate() {
+		//beginDate.
+		
 		return beginDate;
 	}
 

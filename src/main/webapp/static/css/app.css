@@ -1,27 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Tomorrow:200,300,400,600&display=swap') ;
+
+:root { 
+		--border-color: #e42c64; 
+		--main-color: #443266; 
+		--background-color: #9a9adc; 
+		--panelbody-color: #F1F0FF;
+}
+
 #user-face {
-	border: 5px solid #dd7777;
+	border: 5px solid var(--border-color);
 	border-radius: 100%;
-	
 }
 
 body {
-	
-	
-	background-color: #bbded6;
+	background-color: var(--background-color);
 }
 
 .panel>.panel-heading {
+	font-family: 'Tomorrow', sans-serif;
+	font-weight: 400;
 	border: none;
-	background-image:none;
+	background-image: none;
 	/*background-image: linear-gradient(-20deg, #2b5876 0%, #4e3476 100%);*/
 	/*background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%); - error panel*/
-    background-color:#2594a9;
-    color: white;
-}
-.panel{
-	border:0px;
-}
-.container{
-	margin-top:50px;
+	background-color: var(--main-color);;
+	color: white;
 }
 
+.panel {
+	border: none;
+}
+
+.panel-body {
+	font-family: 'Tomorrow', sans-serif;
+	font-weight: 400;
+	/*background-color: var(--panelbody-color);*/
+}
+
+.container {
+	margin-top: 20px;
+}
+
+#custom-navbar {
+	background-image: none;
+	border-bottom: 2px solid var(--border-color);
+	border-top: none; border-left; border-right;
+	background-color: var(--panelbody-color);
+	/*background-color:#DEE2E5;*/
+}
+
+#search-field {
+	border: 2px solid var(--border-color);
+	font-family: 'Tomorrow', sans-serif;
+	width: 25em;
+}
+
+#profile-dropdown {
+	color: var(--border-color);
+	font-family: 'Tomorrow', sans-serif;
+	font-weight: 600;
+	font-size: 1em;
+}
+
+.dropdown-menu>li>a {
+	font-family: 'Tomorrow', sans-serif;
+	font-weight: 300;
+	color: var(--border-color)
+}
+
+#submit-btn {
+	font-family: 'Tomorrow', sans-serif;
+	background-color: var(--border-color);
+	color: #ffffff;
+	border: 2px solid transparent;
+	border-radius: 3px;
+	margin-left: 15px;
+	font-weight: 600;
+}
+
+#brand {
+	font-family: 'Tomorrow', sans-serif;
+	margin-left: 1em;
+	color: var(--border-color);
+	font-size: 1.7em;
+	font-weight: 800;
+}
+
+#main {
+	margin-top: 30px;
+	background-color: var(--panelbody-color);
+	border: 3px solid var(--border-color);
+	border-radius: 5px;
+	width: 100%;
+	font-size: 1.05em;
+	display: block;
+	float: left;
+	margin-bottom: 0px;
+}
+
+#name {
+	font-family: 'Tomorrow', sans-serif;
+	font-weight: 600;
+}
+
+.contacts>.list-group-item {
+	margin: 0px;
+	border-radius: 0px;
+	padding: 15px 2px 20px 15px;
+}
+
+.contacts {
+	margin: 0px;
+}
+
+/* NAV IN EDIT*/
+#edit-nav>li>a {
+	font-family: 'Tomorrow', sans-serif;
+	background-color: var(--main-color);
+	color: #ffffff;
+	font-weight: 600;
+	margin-bottom: 0.2em;
+	margin-right: 0.1em;
+}
+
+#edit-nav {
+	margin-left: 1.4em;
+	border-bottom: none;
+}
+
+#edit-nav>li>a:hover {
+	background-image: none;
+	background-color: #e42c64;
+	border: 2px solid #ffffff;
+}
+
+/* QUOTE */
+#quote {
+	
+}
+
+.form-rows {
+	margin: 10px;
+}
+
+.form-control {
+	margin-top: 10px;
+}

@@ -1,4 +1,4 @@
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <div class="panel panel-primary">
 	<div class="panel-heading">
@@ -9,58 +9,25 @@
 	<div class="panel-body">
 		<div class="page">
 			<div class="timeline">
+			<c:forEach var="practic" items="${profile.practics }">
+			
 				<div class="timeline__group">
-					<span class="timeline__year">2008</span>
+					<span class="timeline__year">${practic.getBeginDate().getYear()+1900 }</span>
 					<div class="timeline__box">
 						<div class="timeline__date">
-							<span class="timeline__day">2</span> <span class="timeline__month">Feb</span>
+							<span class="timeline__day">${practic.getBeginDate().getDay() }</span> <span class="timeline__month">${formatter.print(practic.getBeginDate().getMonth()) }</span>
 						</div>
 						<div class="timeline__post">
 							<div class="timeline__content">
-								<p>Attends the Philadelphia Museum School of Industrial Art. Studies design with Alexey Brodovitch, art director at Harper's Bazaar, and
-									works as his assistant.</p>
+								<p>${practic.responsibilities }</p>
 							</div>
 						</div>
 					</div>
-					<div class="timeline__box">
-						<div class="timeline__date">
-							<span class="timeline__day">1</span> <span class="timeline__month">Sept</span>
-						</div>
-						<div class="timeline__post">
-							<div class="timeline__content">
-								<p>Started from University of Pennsylvania. This is an important stage of my career. Here I worked in the local magazine. The experience
-									greatly affected me</p>
-							</div>
-						</div>
-					</div>
+					
 				</div>
-				<div class="timeline__group">
-					<span class="timeline__year">2014</span>
-					<div class="timeline__box">
-						<div class="timeline__date">
-							<span class="timeline__day">14</span> <span class="timeline__month">Jul</span>
-						</div>
-						<div class="timeline__post">
-							<div class="timeline__content">
-								<p>Travels to France, Italy, Spain, and Peru. After completing fashion editorial in Lima, prolongs stay to make portraits of local people
-									in a daylight studio</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="timeline__group">
-					<span class="timeline__year">2016</span>
-					<div class="timeline__box">
-						<div class="timeline__date">
-							<span class="timeline__day">28</span> <span class="timeline__month">Aug</span>
-						</div>
-						<div class="timeline__post">
-							<div class="timeline__content">
-								<p>Upon moving to Brooklyn that summer, I began photographing weddings in Chicago</p>
-							</div>
-						</div>
-					</div>
-				</div>
+				</c:forEach>
+				
+				
 			</div>
 		</div>
 

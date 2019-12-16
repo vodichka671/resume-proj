@@ -7,6 +7,6 @@
 		</h3>
 	</div>
 	<div class="panel-body">
-		Objective
+		${profile.objective }
 	</div>
 </div>

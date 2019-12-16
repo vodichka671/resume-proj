@@ -3,7 +3,6 @@
 
 <body>
 	<div class="container">
-	<h1>${production}</h1>
 		<div class="row">
 			<div class="col-md-4 col-sm-6">
 				<resume:profile-main />
@@ -19,14 +18,16 @@
 				<resume:profile-objective />
 
 				<resume:profile-skills />
+				
+				<resume:profile-education />
 
 				<resume:profile-experience />
+				
+				<resume:profile-courses />
 
 				<resume:profile-certificates />
 
-				<resume:profile-courses />
-
-				<resume:profile-education />
+				
 			</div>
 		</div>
 	</div>

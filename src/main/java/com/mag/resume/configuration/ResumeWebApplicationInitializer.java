@@ -18,7 +18,7 @@ import org.springframework.web.context.support.AnnotationConfigWebApplicationCon
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.DispatcherServlet;
 
-import com.mag.resume.controller.ProfileController;
+import com.mag.resume.controller.PublicDataController;
 import com.mag.resume.filter.ApplicationFilter;
 import com.mag.resume.filter.ResumeFilter;
 import com.mag.resume.listener.ApplicationListener;

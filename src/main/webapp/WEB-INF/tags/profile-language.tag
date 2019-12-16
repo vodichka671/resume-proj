@@ -1,4 +1,5 @@
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <div class="panel panel-primary">
 	<div class="panel-heading">
@@ -7,6 +8,9 @@
 		</h3>
 	</div>
 	<div class="panel-body">
-		<p class="text-success">Languages</p>
+		<c:forEach var="language" items="${profile.getLanguages() }">
+			<option value="${language.id}"><strong>${language.name}:</strong> ${language.level.getDbValue()}
+			</option>
+		</c:forEach>
 	</div>
 </div>

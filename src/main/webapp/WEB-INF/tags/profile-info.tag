@@ -8,7 +8,7 @@
 	</div>
 	<div class="panel-body">
 		<div >
-			info
+			${profile.info }
 		
 		</div>
 	</div>

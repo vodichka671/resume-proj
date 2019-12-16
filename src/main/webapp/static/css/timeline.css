@@ -1,10 +1,15 @@
 .timeline{
-  --uiTimelineMainColor: var(--timelineMainColor, #222);
+  --uiTimelineMainColor: var(--timelineMainColor, #dd7777);
   --uiTimelineSecondaryColor: var(--timelineSecondaryColor, #fff);
 
   position: relative;
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.timeline{
+  --timelineMainColor: #e42c64;
+  font-size: 16px;
 }
 
 .timeline:before{
@@ -136,10 +141,7 @@
   }
 }
 
-.timeline{
-  --timelineMainColor: #dd7777;
-  font-size: 16px;
-}
+
 
 /*
 =====
